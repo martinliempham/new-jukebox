@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8">
+<!--             <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ -->            <title>Jukebox</title>
+            <link rel="stylesheet" type="text/css" href="style.css">
+            <link rel="stylesheet" type="text/css" href="styleButton.css">
+            
+
+    </head>
+    <body>
+
+<!-- //buttons stolen from https://codepen.io/bloom-dan/pen/dpbWRz -->
+    <div class = "jukebuttoncontainer">
+        <button class="btn striped-shadow dark" id="prevBtn" onclick="juke.loadPrev()">Prev</button>
+        <button class="btn striped-shadow blue" id="playBtn" onclick="juke.playIt()">Play</button>
+        <button class="btn striped-shadow dark" id="stopBtn" onclick="juke.stopIt()">Stop</button>
+        <button class="btn striped-shadow blue" id="nextBtn" onclick="juke.loadNext()">Next</button>
+    </div>
+
+    <br>
+        <audio id="audio1" controls>
+                <source src="" type="audio/mp3">
+        </audio>
+    </br>
+     <!--    <br><label for="song-title">songName</label></br> -->
+     <div class = "search">
+        <input type="text" name="song-title-title" id="songName">
+        <input type="submit" value="submit">
+    </div>
+
+       <!--  <button class="btn striped-shadow blue" id="submitBtn" onclick="juke.addSong()">Add Song</button> -->
+
+       
+        <ul>
+            <li><ul class="title">Song Title</ul></li>
+        
+            <li><ul class="artist">Artists</ul></li>
+       
+            <li><ul class="description">Description</ul></li>
+       
+            <li><ul class="genre">Genre</ul></li>
+  
+            <li><ul class="poster"></ul></li>
+       </ul>
+    
+
+
+
+    <span id="title"></span>
+    <!-- //comes out at the bottom of the page
+    <ul id="output"></ul> -->
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <script src="https://connect.soundcloud.com/sdk/sdk-3.1.2.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    </body>
+</html>
