@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/martinliempham/new-jukebox/issues"
   },
-  "homepage": "https://github.com/martinliempham/new-jukebox#readme"
+  "homepage": "https://github.com/martinliempham/new-jukebox#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
