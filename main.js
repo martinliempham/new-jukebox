@@ -159,12 +159,6 @@ $("#nextBtn").click(function(){
 // app.listen(3000, function(){
 //   console.log('App is listening on port 3000');
 // })
-app.listen(process.env.PORT || 3000, function() {
-  console.log("Your server is available at localhost:3000!");
-  });
 
-app.get('*', function(request, response){
-  response.status(404).send('page not found')
-})
 
 
